@@ -44,4 +44,9 @@ docker-compose down
 
 ## Todo
 
+テスト
+DB アクセス
+画面
+README
+
 ## Reference

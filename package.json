@@ -1,0 +1,10 @@
+{
+    "name": "cc-api-solo-project",
+    "version": "0.0.1",
+    "main": "index.js",
+    "author": "tomoyuki kobayashi <kobatommy@gmail.com>",
+    "license": "MIT",
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {}
+}

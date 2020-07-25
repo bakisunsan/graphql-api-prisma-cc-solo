@@ -1,8 +1,10 @@
 import { GraphQLServer } from "graphql-yoga";
+import { Prisma } from "prisma-binding";
 
 const resolvers = {
   Query: {
     description: () => `hell ya!`,
+    posts: () => [{ id: "foo" }],
   },
 };
 

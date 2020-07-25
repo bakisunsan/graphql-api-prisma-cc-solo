@@ -32,6 +32,8 @@ Prisma TypeScript Client
 ```
 cd database
 docker-compose up
+prisma deploy
+docker-compose down
 ```
 
 `yarn start`

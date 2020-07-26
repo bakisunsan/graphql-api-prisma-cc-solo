@@ -32,16 +32,22 @@ VSCode Prisma Apollo extensions
 
 ## Todo
 
-テスト
-DB アクセス
+Mock
+CRUD
 画面
 README
+Version/Document
+Auth
+
+テスト
+DB アクセス
 
 LT
-BigMini
+BigMiniConf
 Assessment
 
-Version/Document
+運動
+Guru
 
 ## Reference
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="/js/draw.js"></script>
+    <link rel="stylesheet" href="/css/sample.css">
+</head>
+
+<body>
+    <h1>My GraphQL First Project</h1>
+    <div>
+        <h2>Software Stack</h2>
+        <ul>
+            <li>Lang - javascript/typescript</li>
+            <li>Server - apollo-server/express</li>
+            <li>SchemaGenerator - nexus</li>
+            <li>GraphQLClient - prisma</li>
+            <li>ORM - prisma</li>
+            <li>Database - sqlite3</li>
+            <li>SetUp - graphql-yoga</li>
+            <li>Other - babel/browserify</li>
+        </ul>
+    </div>
+    <div>
+        <h2>List Feed request</h2>
+        <button type="submit" id="list">list</button>
+        <div id="listResult" />
+    </div>
+    <div>
+        <h2>Post Feed request</h2>
+        title: <input type="text" name="content" /> <br /> content: <input type="text" name="imageUrl" /> <br /> authorEmail: <input type="text" name="feeling" /> <br />
+        <button type="submit" id="post">post</button>
+        <div id="postResult" />
+    </div>
+</body>
+
+</html>

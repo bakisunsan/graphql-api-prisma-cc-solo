@@ -13,26 +13,6 @@ I try to implement below;
 - Describe APIs.
 - Create a basic/simple frontend.
 
-### Summary
-
-#### 👍 What I did well.
-
-- I tried a whole new set of tools from scratch that I didn't learn in lecture.
-- I was able to get the whole thing to work with a group of tools that depend on a variety of things.
-- By using only schemas as much as possible in later life, we discovered the advantages of schema-driven, consistent client, server and DB development.
-- Most of the errors that came up one after another were solved while investigating the operation.
-
-#### 👎 What I could improve.
-
-- With a maximum time limit of two days, he chose to take a risk and choose technology as a hobby.
-- I was plagued with a large amount of version and backward/forward compatibility errors due to the use of an underdeveloped tool that was not mature.
-- It took more time to understand the tool than to create the feature itself.
-
-#### ↗️ Try next.
-
-- Don't do it thinking you don't want to do it, but do it for fun.
-- Start from MVP.
-
 ## Getting Started
 
 ### Architecture
@@ -102,6 +82,27 @@ If you modify src/front/public/js/draw.json, type the command below;
 See [schema.graphql](https://github.com/bakisunsan/cc13-project.solo-api/blob/master/schema.graphql).
 
 And you can also try with GraphQL Playground `http://localhost:4000/`.
+
+## Summary
+
+### 👍 What I did well.
+
+- I tried a whole new set of tools from scratch that I didn't learn in lecture.
+- I was able to get the whole thing to work with a group of tools that depend on a variety of things.
+- By using only schemas as much as possible in later life, we discovered the advantages of schema-driven, consistent client, server and DB development.
+- Most of the errors that came up one after another were solved while investigating the operation.
+- Added tools such as yarn, babel, browserify, etc. to command the whole build process
+
+### 👎 What I could improve.
+
+- With a maximum time limit of two days, he chose to take a risk and choose technology as a hobby.
+- I was plagued with a large amount of version and backward/forward compatibility errors due to the use of an underdeveloped tool that was not mature.
+- It took more time to understand the tool than to create the feature itself.
+
+### ↗️ Try next.
+
+- Don't do it thinking you don't want to do it, but do it for fun.
+- Start from MVP.
 
 ## Todos
 

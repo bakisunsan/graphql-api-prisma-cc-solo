@@ -4,11 +4,11 @@
   "author": "tomoyuki kobayashi <kobatommy@gmail.com>",
   "scripts": {
     "start": "yarn start:server && yarn start:front",
-    "start:server": "node dist/server",
+    "start:server": "node dist/api/server",
     "start:front": "node ./src/front/index.js",
     "clean": "rm -rf dist",
     "build": "npm -s run clean && npm -s run generate && tsc",
-    "initdb": "prisma init database",
+    "initdb": "prisma init",
     "introspectdb": "prisma introspect",
     "generate": "npm -s run generate:prisma && npm -s run generate:nexus",
     "generate:prisma": "prisma generate",

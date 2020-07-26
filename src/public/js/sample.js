@@ -1,4 +1,4 @@
 {
-    const el = document.getElementById('hoge')
-    el.innerText = 'HAHAHAHAHAHAHA!!!!'
+  const el = document.getElementById('hoge')
+  el.innerText = 'HAHAHAHAHAHAHA!!!!'
 }

@@ -8,12 +8,6 @@ Saturday 17:00.
 
 ### Architecture
 
-install docker composer
-https://docs.docker.com/docker-for-mac/install/
-
-install prisma global
-`yarn global add prisma`
-
 VSCode Prisma Apollo extensions
 
 ### Support Version
@@ -22,30 +16,17 @@ VSCode Prisma Apollo extensions
 
 `yarn install`
 
-`yarn global add prisma`
-
 `npx prisma init database`
 
-`prisma init database`
+`npx prisma introspect`
 
-`prisma introspect`
-
-`prisma generate`
-
-Create New database
-PostgresSQL
-Prisma TypeScript Client
-
-```
-cd database
-docker-compose up
-prisma deploy
-docker-compose down
-```
+`yarn generate`
 
 `yarn start`
 
 `http://localhost:4000/`
+
+`http://localhost:4010/`
 
 ## Specification
 
@@ -55,6 +36,12 @@ docker-compose down
 DB アクセス
 画面
 README
+
+LT
+BigMini
+Assessment
+
+Version/Document
 
 ## Reference
 

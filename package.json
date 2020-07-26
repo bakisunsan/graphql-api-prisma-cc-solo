@@ -3,23 +3,28 @@
     "version": "0.0.1",
     "author": "tomoyuki kobayashi <kobatommy@gmail.com>",
     "scripts": {
-        "start": "node dist/server",
+        "start": "yarn start:server && yarn start:front",
+        "start:server": "node dist/server",
+        "start:front": "node ./src/index.js",
         "clean": "rm -rf dist",
         "build": "npm -s run clean && npm -s run generate && tsc",
         "generate": "npm -s run generate:prisma && npm -s run generate:nexus",
         "generate:prisma": "prisma generate",
         "generate:nexus": "ts-node --transpile-only src/schema",
         "postinstall": "npm -s run generate",
-        "dev": "ts-node-dev --no-notify --respawn --transpileOnly src/server"
+        "dev": "ts-node-dev --no-notify --respawn --transpileOnly src/server",
+        "seed": "ts-node src/seed/*.ts"
     },
     "dependencies": {
         "@nexus/schema": "0.14.0",
+        "@prisma/client": "2.3.0",
         "@types/node-fetch": "2.5.7",
         "apollo-server": "2.16.0",
+        "express": "4.17.1",
         "graphql": "15.3.0",
-        "graphql-yoga": "^1.18.3",
+        "graphql-yoga": "1.18.3",
         "nexus-plugin-prisma": "0.16.1",
-        "nexus-prisma": "^0.16.2"
+        "nexus-prisma": "0.16.2"
     },
     "devDependencies": {
         "@types/node": "12.12.53",

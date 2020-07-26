@@ -24,7 +24,14 @@ VSCode Prisma Apollo extensions
 
 `yarn global add prisma`
 
+`npx prisma init database`
+
 `prisma init database`
+
+`prisma introspect`
+
+`prisma generate`
+
 Create New database
 PostgresSQL
 Prisma TypeScript Client
@@ -50,3 +57,11 @@ DB アクセス
 README
 
 ## Reference
+
+https://github.com/prisma-labs/graphql-yoga
+
+https://github.com/prisma/prisma-examples/tree/master/typescript/graphql
+
+https://www.prisma.io/docs/understand-prisma/introduction/
+
+https://github.com/matiassingers/awesome-readme

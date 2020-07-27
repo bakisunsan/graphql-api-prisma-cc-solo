@@ -106,16 +106,7 @@ And you can also try with GraphQL Playground `http://localhost:4000/`.
 
 ## Todos
 
-- [ ] Fix front javascript problem.
-
-Error occurs in `const { PrismaClient } = require('@prisma/client')` block when running on Chrome.
-It may be caused by prisma dependency version.
-
-```
- $ browserify src/front/public/js/draw.js -o src/front/public/js/bundle.js
- Error: Cannot find module 'async_hooks' from '/Users/xxx/ghq/github.com/xxx/cc13-project.solo-api/node_modules/@prisma/client/runtime'
-```
-
+- [ ] Frontend
 - [ ] more Schema
 - [ ] more Query/Mutation
 - [ ] more Seed data

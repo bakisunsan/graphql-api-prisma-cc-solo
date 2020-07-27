@@ -1,72 +1,67 @@
 {
-  "name": "cc-api-solo-project",
-  "version": "0.0.1",
-  "author": "tomoyuki kobayashi <kobatommy@gmail.com>",
-  "scripts": {
-    "start": "yarn start:server && yarn start:front",
-    "start:server": "node dist/api/server",
-    "start:front": "node ./src/front/index.js",
-    "clean": "rm -rf dist",
-    "build": "npm -s run clean && npm -s run generate && tsc",
-    "initdb": "prisma init",
-    "introspectdb": "prisma introspect",
-    "generate": "npm -s run generate:prisma && npm -s run generate:nexus",
-    "generate:prisma": "prisma generate",
-    "generate:nexus": "ts-node --transpile-only src/schema",
-    "postinstall": "npm -s run generate",
-    "dev": "ts-node-dev --no-notify --respawn --transpileOnly src/api/server",
-    "seed": "ts-node src/seed/*.ts",
-    "lint": "eslint --fix --ext .js .",
-    "test": "mocha --require @babel/register test && yarn lint",
-    "frontbuild": "browserify src/front/public/js/draw.js -o src/front/public/js/bundle.js"
-  },
-  "dependencies": {
-    "@nexus/schema": "0.14.0",
-    "@prisma/client": "2.3.0",
-    "@types/node-fetch": "2.5.7",
-    "apollo-server": "2.16.0",
-    "bluebird": "~3.5.5",
-    "express": "4.17.1",
-    "graphql": "15.3.0",
-    "graphql-yoga": "1.18.3",
-    "nexus-plugin-prisma": "0.17.0-next.5",
-    "nexus-prisma": "0.16.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/register": "^7.10.5",
-    "@types/node": "^14.0.26",
-    "@typescript-eslint/eslint-plugin": "^3.7.0",
-    "@typescript-eslint/parser": "^3.7.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "browserify": "^16.5.1",
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-config-problems": "^3.0.1",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^3.0.1",
-    "mocha": "^6.2.0",
-    "nodemon": "^1.19.1",
-    "prettier": "^1.18.2",
-    "pretty-quick": "^1.11.1",
-    "ts-node": "8.10.2",
-    "ts-node-dev": "1.0.0-pre.50",
-    "typescript": "3.9.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
+    "name": "cc-api-solo-project",
+    "version": "0.0.1",
+    "author": "tomoyuki kobayashi <kobatommy@gmail.com>",
+    "scripts": {
+        "start": "yarn start:server && yarn start:front",
+        "start:server": "node dist/api/server",
+        "start:front": "node ./src/front/index.js",
+        "clean": "rm -rf dist",
+        "build": "npm -s run clean && npm -s run generate && tsc",
+        "initdb": "prisma init",
+        "introspectdb": "prisma introspect",
+        "generate": "npm -s run generate:prisma && npm -s run generate:nexus",
+        "generate:prisma": "prisma generate",
+        "generate:nexus": "ts-node --transpile-only src/schema",
+        "postinstall": "npm -s run generate",
+        "dev": "ts-node-dev --no-notify --respawn --transpileOnly src/api/server",
+        "seed": "ts-node src/seed/*.ts",
+        "lint": "eslint --fix --ext .js .",
+        "test": "mocha --require @babel/register test && yarn lint",
+        "frontbuild": "browserify src/front/public/js/draw.js -o src/front/public/js/bundle.js"
+    },
+    "dependencies": {
+        "@nexus/schema": "0.14.0",
+        "@prisma/client": "2.3.0",
+        "@types/node-fetch": "2.5.7",
+        "apollo-server": "2.16.0",
+        "bluebird": "~3.5.5",
+        "express": "4.17.1",
+        "graphql": "15.3.0",
+        "graphql-yoga": "1.18.3",
+        "nexus-plugin-prisma": "0.17.0-next.5",
+        "nexus-prisma": "0.16.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.5",
+        "@babel/register": "^7.10.5",
+        "@types/node": "^14.0.26",
+        "@typescript-eslint/eslint-plugin": "^3.7.0",
+        "@typescript-eslint/parser": "^3.7.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2015": "^6.24.1",
+        "browserify": "^16.5.1",
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "eslint": "^6.1.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-config-problems": "^3.0.1",
+        "eslint-plugin-prettier": "^3.1.0",
+        "husky": "^3.0.1",
+        "mocha": "^6.2.0",
+        "nodemon": "^1.19.1",
+        "prettier": "^1.18.2",
+        "pretty-quick": "^1.11.1",
+        "ts-node": "8.10.2",
+        "ts-node-dev": "1.0.0-pre.50",
+        "typescript": "3.9.6"
+    },
+    "prettier": {
+        "singleQuote": true,
+        "semi": false,
+        "trailingComma": "all"
+    },
+    "engines": {
+        "node": ">=10.0.0"
     }
-  },
-  "prettier": {
-    "singleQuote": true,
-    "semi": false,
-    "trailingComma": "all"
-  },
-  "engines": {
-    "node": ">=10.0.0"
-  }
 }
